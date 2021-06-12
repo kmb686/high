@@ -1,0 +1,482 @@
+body{
+   margin: 0;
+   font-size: 16px;
+   font-family: Verdana, sans-serif;
+   color: #333;
+}
+
+header{
+   background-color: rgba(5, 5, 5, 0.972);
+   color:#fff;
+   padding: 0px;
+   margin: 0px;
+   height: 680px;
+}
+
+#sitetitle{
+   font-size:30px;
+}
+
+#mainV{
+   margin : 0;
+   padding: 0;
+   height: 520px;
+   background-image: url('view/test.jpg');
+   background-size: cover;
+   height: 630px;
+   overflow: hidden;
+   position: relative; 
+}
+
+/* コピペしたが理解した */
+span.conscious {/*各テキストにanimationを設定*/
+   font-size: 50px;
+   color: transparent;/*テキストを透明にしてtext-shadowだけ表示する*/
+   animation: blur 9s infinite;
+   position: relative;
+   left: 600px;
+}
+
+/* 「測定不能」 */
+span.conscious b{
+   font-size: 150px;
+   font-family: impact;
+   font-weight: bold;
+   display: inline-block;
+}
+
+/*「測定不能」 角度*/
+span.conscious .first{
+   transform: rotate( -40deg );
+}
+span.conscious .second{
+   transform: rotate( 70deg );
+}
+span.conscious .third{
+   transform: rotate( -30deg );
+}
+span.conscious .second{
+   transform: rotate( 20deg );
+}
+
+/*一文字ずつ遅延させる*/
+span.conscious:nth-child(1) {
+  animation-delay: 0.5s;
+}
+span.conscious:nth-child(2){
+ animation-delay: 1.0s;
+}
+span.conscious:nth-child(3) {
+  animation-delay: 1.5s;
+}
+span.conscious:nth-child(4) {
+  animation-delay: 2.0s;
+}
+span.conscious:nth-child(5) {
+  animation-delay: 2.5s;
+}
+span.conscious:nth-child(6) {
+  animation-delay: 3.0s;
+}
+span.conscious:nth-child(7) {
+  animation-delay: 4.0s;
+}
+span.conscious:nth-child(8) {
+   animation-delay: 4.5s;
+ }
+
+ /* 「測定不能」は9-12 */
+ 
+ span.conscious:nth-child(9) {
+   animation-delay: 6.0s;
+ }
+ span.conscious:nth-child(10) {
+   animation-delay: 7.2s;
+ }
+ span.conscious:nth-child(11) {
+   animation-delay: 8.4s;
+ }
+ span.conscious:nth-child(12) {
+   animation-delay: 9.6s;
+ }
+
+@keyframes blur {/*opacityとtext-shadow+animationでフェードインを表現する*/
+  0%    {text-shadow:  0 0 100px #fff; opacity:0;}
+  5%    {text-shadow:  0 0 90px #fff;}
+  15%    {opacity: 1;}
+  20%    {text-shadow:  0 0 0px #fff;}
+  40%    {text-shadow:  0 0 0px #fff;}
+  50%    {text-shadow:  0 0 0px #fff;}
+  60%    {opacity: 1;}
+  70%    {text-shadow:  0 0 0px #fff;}
+  80%    {text-shadow:  30 30 100px rgba(36, 33, 33, 0.048);}
+  85%    {text-shadow:  30 30 100px rgba(36, 33, 33, 0.048);}
+  95%    {text-shadow:  30 30 100px rgba(36, 33, 33, 0.048);}
+  100%   {text-shadow:  30 30 100px rgba(36, 33, 33, 0.048);}
+}
+
+.fade-in{
+   font-size: 40px;
+   margin :0;
+   padding:0;
+   width: 290px;
+   position: absolute;
+   right: 50px;
+   bottom: 100px;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.anim-box.slidein.is-animated {
+   animation: slideIn 1.5s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards;
+   font-size: 30px;
+}
+ 
+ @keyframes slideIn {
+   0% {
+     transform: translateX(1000px);
+     opacity: 0;
+   }
+   50% {
+     transform: translateX(900px);
+     opacity: 0.5;
+   }
+   65% {
+     transform: translateX(930px);
+   }
+   100% {
+     transform: translateX(900px);
+   }
+   20%,100% {
+     opacity: 1;
+   }
+ }
+
+mark{
+   background-color: #fff;
+}
+
+#wrapper li{
+   float: left;
+   text-align: center;
+   position: relative;
+   width: 14.7%;
+   color: #000000;
+   background-color: #fff;
+   font-size: 21px;
+   vertical-align: baseline;
+   line-height: 1.3;
+   word-wrap: break-word;
+   white-space: normal;
+   cursor: pointer;
+   transition: all 0.3s;
+   border: double 10px black;
+   padding: 20px ;
+   }
+
+#wrapper a{
+   padding: 20px 24px;
+}
+
+#wrapper li a:link,
+#wrapper li a:visited{
+   color: #8f4d4d;
+}
+
+#wrapper li a:hover{
+   text-decoration: none;
+   color: #fff;
+}
+
+/* a:link { color: #0000ff; }　/*リンクの色 */
+/* a:visited { color: #aa0055; }　訪問済みリンクの色 */
+/* a:hover { color: #ff0000; }　マウスオン時のリンクの色 */
+/* a:active { color: #00ff00; }　クリックしている時のリンクの色 */ 
+   
+#wrapper li:hover {
+background: black;
+color:  black;
+border-radius: 50px;
+}
+
+/* ここまでヘッダー。以下 5項目 */
+
+main{
+   padding:0 10px;
+   margin: 50px 30px; 
+   width: 1200px;
+   text-align: center;
+}
+
+#Introduction{
+   width: 90%;
+   color:#fff;   
+   margin: 0px 0px;
+   padding:0px 0px;
+}
+
+.inner{
+   padding-top: 50px;
+   margin-top: 10px;
+   margin-bottom: 120px;
+   background-color: rgb(0, 0, 0);
+}
+
+.inner-left{
+   width: 61%;
+   background-color: rgb(0, 0, 0);
+   float: left;
+   height: 400px;
+}  
+
+.Introduction-Title{
+   position: relative;
+   top: 80px;
+   left: 30px;
+   font-weight: bold;
+   font-size: 30px;
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+}
+
+.Introduction-Title i{
+   color: #524f4f;
+}
+
+.Introduction-document{
+   position: relative;
+   top: 150px;
+   left: 30px;
+   display: block;
+   font-size: 17px;
+   line-height: 32px;
+   letter-spacing: 1px;
+   text-align: left;
+   height: auto;
+}
+
+.inner-right{
+   display: flex;
+   background-color: rgb(0, 0, 0);
+   height: 400px;
+   margin-top: 150px;
+}  
+
+.inner-right img {
+   transition: .3s ease-in-out;
+ }
+ .inner-right:hover img {
+   filter: grayscale(100%);
+ }
+ 
+/* ここまで　Introduction　/// ここから 　Potential*/
+   
+.Potential-Title{
+   font-size: 30px;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+   padding-top: 50px;
+}
+
+.Potential-Title i{
+   color: #292727;
+   text-align: center;
+   padding-top: 50px;
+}
+
+.Potential-inner{
+   background-image:url('view/potencial_1.png');
+   height: 700px;
+   width: 1000px;
+   background-size: cover;
+   position: relative; 
+   margin-bottom: 70px;
+}
+
+.Potential-inner span{
+   display: flex;
+   float: right;
+   position: relative;
+   top: 200px;
+   left: 200px;
+   line-height: 40px;
+   font-weight: 900;
+}
+
+/* ここまで　Potencial ///　
+   ここから　Career */
+
+#Career{
+   line-height:30px;
+   text-align: left;
+}
+
+.Career-Title{
+   color: #524f4f;
+ }
+
+#Career h2{
+   line-height: 50px;
+   color: #fff;
+   font-size: 34px;
+   text-align: center;
+   padding-top: 80px;
+   background-color: rgb(0, 0, 0);
+   margin-bottom: 0px;
+}
+
+.Career-inner{
+   padding-top: 60px;
+   padding-left: 40px;
+   padding-bottom: 80px;
+   margin-bottom: 50px;
+   background-color: rgb(0, 0, 0);
+   color: #fff;
+   font-size: 16px;
+   line-height: 36px;
+}
+
+.Career-inner u{
+   letter-spacing: 10px;
+   font-size: 26px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.Career-inner-right{
+   width: 48%;
+   display: flex;
+}  
+
+.Career-inner-left{
+   width: 45%;
+   float: left;
+}  
+
+
+/* ここまで　Career ///　ここから　Recommend */
+
+
+.Recommend-Title{
+   font-size: 30px;
+   font-weight: bold;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.Recommend-Title i{
+   color: #292727;
+   text-align: center;
+}
+
+.Recommend-inner{
+   margin-top: 30px;
+}
+
+.Recommend-left{
+   float:left;
+   width: 45%;
+   height: 50%;
+   margin-right: 40px;
+   margin-top: 40px;
+}
+
+.Recommend-left b,
+.Recommend-left-r b{
+   font-size: 20px;
+}
+
+
+.Recommend-Coment{
+   letter-spacing: 1.5px;
+   padding-top: 50px;
+   line-height: 34px;
+}
+
+.Recommend-right{
+   display:flex ;
+   width: 45%;
+}
+
+.Recommend-right img{
+   border: solid 10px #f0f0f0;;
+}
+
+/* .Recommend-left-r　のみ　左右逆　=> float rightで指定 */
+
+.Recommend-left-r{
+   float:right;
+   width: 45%;
+   height: 50%;
+   margin-right: 40px;
+   margin-top: 40px;
+}
+
+/* ここまで Recommend ///　ここから ENTRY */
+
+#Entry{
+   line-height:30px;
+}
+
+#Entry img{
+   line-height:30px;
+   text-align: center;
+   padding-top: 30px;
+   
+}
+
+.Entry-Title{
+   color: #524f4f;
+ }
+
+#Entry h2{
+   line-height: 50px;
+   color: #fff;
+   font-size: 34px;
+   text-align: center;
+   background-color: rgb(0, 0, 0);
+   margin-bottom: 0px;
+}
+
+.Entry-inner{
+   padding-top: 30px;
+   padding-left: 40px;
+   padding-bottom: 80px;
+   margin-bottom: 50px;
+   background-color: rgb(0, 0, 0);
+   font-size: 16px;
+   line-height: 36px;
+}
+
+.btn {
+   color: white;
+   display: inline-block;
+   opacity: 0.8;
+   border-radius: 4px;
+ }
+
+ .btn:visited {
+   opacity: 1;
+ } 
+
+.btn:hover {
+   opacity: 1;
+   transform: scale(2, 2);
+ } 
+
+.btn {
+   font-size: 25px;
+   padding: 15px 40px;
+   background-color: #fa194a;
+   cursor: pointer;
+   box-shadow: 0 7px #772929;
+   letter-spacing: 10px;
+   text-decoration: none;
+}
+
+ .btn:active{
+   box-shadow:none;
+   position:relative;
+}
+
+/* a:link { color: #0000ff; }　/*リンクの色 */
+/* a:visited { color: #aa0055; }　訪問済みリンクの色 */
+/* a:hover { color: #ff0000; }　マウスオン時のリンクの色 */
+/* a:active { color: #00ff00; }　クリックしている時のリンクの色 */ 
