@@ -8,7 +8,6 @@ body{
     font-size: 14px;
 }
 
-
 .mail-inner-head{
     margin-top: 12px;
     background-color: #fff;
@@ -72,12 +71,3 @@ body{
 	border-bottom: 2px solid #da3c41;
 	outline: none;
 }
-
-/* .send-btn{
-    padding:10px 24px;
-    background-color: #aaaaaa;
-    color: #fff;
-    width: fit-content;
-    border-radius: 5px;
-    text-decoration: none;
-} */

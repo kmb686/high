@@ -1,8 +1,41 @@
+*{
+   box-sizing: border-box;
+}
+
+@media(max-width:900px){
+   body{
+      text-align: center;
+      width: 100%;
+   }
+   
+   header{
+      width: 100%;
+   }
+
+   #wrapper li{
+      font-size: 4px;
+      width: 20%;
+
+   }
+
+/* 上記、レスポンシブ設定中(0627 1610 */
+
+/*テキストを透明にしてtext-shadowだけ表示する*/
+   span.conscious {
+      font-size: 10px;
+      color: transparent;
+      animation: blur 9s infinite;
+      position: relative;
+      left: 600px;
+   }
+}
+
 body{
    margin: 0;
    font-size: 16px;
    font-family: Verdana, sans-serif;
    color: #333;
+   width: 100%;
 }
 
 header{
@@ -15,12 +48,13 @@ header{
 
 #sitetitle{
    font-size:30px;
+   text-align: left;
+   padding-left: 50px;
 }
 
 #mainV{
    margin : 0;
    padding: 0;
-   height: 520px;
    background-image: url('view/test.jpg');
    background-size: cover;
    height: 630px;
@@ -28,10 +62,9 @@ header{
    position: relative; 
 }
 
-/* コピペしたが理解した */
-span.conscious {/*各テキストにanimationを設定*/
+span.conscious {
    font-size: 50px;
-   color: transparent;/*テキストを透明にしてtext-shadowだけ表示する*/
+   color: transparent;
    animation: blur 9s infinite;
    position: relative;
    left: 600px;
@@ -115,17 +148,6 @@ span.conscious:nth-child(8) {
   100%   {text-shadow:  30 30 100px rgba(36, 33, 33, 0.048);}
 }
 
-.fade-in{
-   font-size: 40px;
-   margin :0;
-   padding:0;
-   width: 290px;
-   position: absolute;
-   right: 50px;
-   bottom: 100px;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .anim-box.slidein.is-animated {
    animation: slideIn 1.5s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards;
    font-size: 30px;
@@ -159,7 +181,7 @@ mark{
    float: left;
    text-align: center;
    position: relative;
-   width: 14.7%;
+   width: 19.5%;
    color: #000000;
    background-color: #fff;
    font-size: 21px;
@@ -203,7 +225,7 @@ border-radius: 50px;
 main{
    padding:0 10px;
    margin: 50px 30px; 
-   width: 1200px;
+   width: 100%;
    text-align: center;
 }
 
@@ -285,25 +307,25 @@ main{
 
 .Potential-inner{
    background-image:url('view/potencial_1.png');
-   height: 700px;
-   width: 1000px;
+   height: 800px;
+   width: 760px;
    background-size: cover;
    position: relative; 
-   margin-bottom: 70px;
+   text-align: left;
 }
 
 .Potential-inner span{
    display: flex;
    float: right;
    position: relative;
-   top: 200px;
-   left: 200px;
-   line-height: 40px;
-   font-weight: 900;
+   top: 60px;
+   left: 470px;
+   line-height: 38px;
+   font-size: 15px;
+   font-weight: bold;
 }
 
-/* ここまで　Potencial ///　
-   ここから　Career */
+/* ここまで　Potencial ///　   ここから　Career */
 
 #Career{
    line-height:30px;
@@ -351,9 +373,7 @@ main{
    float: left;
 }  
 
-
 /* ここまで　Career ///　ここから　Recommend */
-
 
 .Recommend-Title{
    font-size: 30px;
@@ -475,8 +495,3 @@ main{
    box-shadow:none;
    position:relative;
 }
-
-/* a:link { color: #0000ff; }　/*リンクの色 */
-/* a:visited { color: #aa0055; }　訪問済みリンクの色 */
-/* a:hover { color: #ff0000; }　マウスオン時のリンクの色 */
-/* a:active { color: #00ff00; }　クリックしている時のリンクの色 */ 
